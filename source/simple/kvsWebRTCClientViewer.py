@@ -144,7 +144,7 @@ class KinesisVideoClient:
         self.video_handler = video_handler
         self.pc = None
 
-    def get_signaling_channel_endpoint(self):
+    def get_signaling_channel_endpoint(self): 
         if self.endpoints is None:  # Check if endpoints are already fetched
             endpoints = self.kinesisvideo.get_signaling_channel_endpoint(
                 ChannelARN=self.channel_arn,
